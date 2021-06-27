@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> stringQues </title>
+</head>
+<script>
+    //chapter 12 Question on String # 1
+  function extractFamilyName(fullName){
+      //Full Name = family Name with Given Name separted by comma
+    var comma = fullName.indexOf(',');
+    var answer = fullName.substring(0,comma);
+    return ("Your Family Name is: " + answer);
+  }
+  console.log(extractFamilyName("Taffesse, Woubishet"));//Taffesse
+  console.log(extractFamilyName("John, Smith"));//John
+  console.log(extractFamilyName("Bob, Marely"));//Bob
+//Reverse of the String # A
+  function reverse(str){
+      var myarray = " ";
+      for(var i = str.length - 1;i>=0; i--){
+            myarray = myarray + str[i];
+      }
+   return myarray;
+  }
+console.log(reverse("madam"));
+console.log(reverse("Boom"));
+console.log(reverse("Box"));
+
+//Comparing Strings # B
+function comparingString(str1,str2,str3){
+   var a = str1.length;
+   var b = str2.length;
+   var c = str3.length;
+   if(a<b && b<c){
+       return ("The Word " + str3 + " has a longest String length");
+   } if (b<a){
+       return ("The Word " + str1 + " has a longest String length");
+  } else {
+       return ("The Word " + str2 + " has a longest String length");
+   }
+}
+console.log(comparingString("Important","Always","Belive"));
+console.log(comparingString("Nice", "Understand", "Gone"));
+console.log(comparingString("Green", "Color", "Eventually"));
+// Occorences on String Question # C
+function occurencesString(string,letter){
+    var count = 0;
+    for(var i=0; i<=string.length; i++){
+      if(string[i] == letter){
+             count++;
+    }
+
+   }
+   return count;
+}
+console.log(occurencesString("Wouboshot",'o'));//3
+console.log(occurencesString("Lemma",'m'));//2
+console.log(occurencesString("Keetele",'e'));//4
+//Occurences on String with Uppercase Letter Question # D
+function occurencesString(str, letter) {
+        var count = 0;
+        for (var i = 0; i <= str.length; i++) {
+            if (str[i] == letter) {
+                count++;
+            }
+        }
+        return count;
+    }
+    console.log(occurencesString("Legacyyy",'L'));//1
+    console.log(occurencesString("ReaLLyHHH",'H'));//3
+    console.log(occurencesString("OMEGAAAA",'A'));//4
+    </script>
+<body>
+<h3><strong> String Revision Questions </strong></h3>
+</body>
+</html>

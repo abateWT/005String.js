@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Common Prefix Ques. </title>
+</head>
+<script>
+    //PROGRAMMING QUESTIONS REX BOOK
+    //Prefix Question # 2
+function prefix(str1,str2){
+    for (var i = 0; i < str1.length; i++) {
+       for(var j = 0; j < str2.length; j++){
+          if(str1[i] == str2[j] != -1){
+          return str1[i];
+             }
+          }
+       }
+    }
+console.log(prefix("disable","distastefull"));//dis
+console.log(prefix("unhappy", "unmarried"));//un
+//Suffix Questions # 3
+function suffix(word1, word2) {
+
+
+
+    }
+console.log(suffix("Badly", "Happily"));//dis
+console.log(suffix("Kindeness", "Weakness"));//un
+//To UpperCase and Lower case Question # 4
+    function switchCase(str) {
+        for (var i = 0; i < str.length; i++) {
+            var letter = str[i];
+            if(str.indexOf(letter) !=-1){
+                return str.toLowerCase();
+            } else {
+                return str.toUpperCase();
+                }
+              }
+            }
+    console.log(switchCase("DISable2234"));//DISABLE
+    console.log(switchCase("ElePHaNTs562345"));//DISABLE
+    //Write a function named titleCase with one parameter named s. This function returns a copy of..... # 5
+    function titleCase(s){
+      var a = s[0].toUpperCase();
+      var b = s.substring(1,name.length);
+            return (a + b);
+    }
+   console.log(titleCase("elePHANT"));//Elephant
+   console.log(titleCase("car"));//Car
+   console.log(titleCase("huMaN"));//HuMaN
+   //Check Spam Question # 3
+   function checkSpam(str){
+     if(str.includes("lottery") || str.includes("prize")){
+         return true;
+     } else {
+         return false;
+     }
+   }
+   console.log(checkSpam("I win a lottery and a prize"));//true
+   console.log(checkSpam("I am John Smith"));//false
+   console.log(checkSpam("You have a wonderful prize"));//true
+
+   </script>
+<body>
+<h2><strong> Common Prefix </strong></h2>
+</body>
+</html>

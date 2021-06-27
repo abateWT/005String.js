@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<script>
+    //Extract Given name Given that Full Name Question # 1
+  function extraxtGivenName(fullName){
+    var comma = fullName.indexOf(',');
+    var lastletter = fullName.length -1;
+    var answer = fullName.substring(comma,lastletter);
+    return ("Your Given Name Is: " + answer);
+  }
+   console.log(extraxtGivenName("Woubishet, Taffesse"));//Taffesse
+   console.log(extraxtGivenName("Reagane, Ronalde"));//Ronalde
+   console.log(extraxtGivenName("Tefere, Gessese"));//Gessese
+</script>
+<body>
+<h2><strong> Extract Given Name </strong></h2>
+</body>
+</html>
